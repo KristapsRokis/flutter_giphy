@@ -1,6 +1,6 @@
-//main
 import 'package:flutter/material.dart';
 import 'package:flutter_giphy/giphy_page.dart';
+
 
 
 void main() {
@@ -10,10 +10,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      key: const Key('title'),
       title: 'Flutter Giphy',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
